@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "web-scraping-cisa-advisory-test-xyz"
+version = "0.2.0"
+description = "A simple web scraping tool that uses Beautiful Soup to scrape CISA Advisory page"
+authors = ["Adam Goss <adamgoss@proton.me>"]
+readme = "README.md"
+packages = [{include = "web_scraping_cisa_advisory"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.30.0"
+bs4 = "^0.0.1"
+beautifulsoup4 = "^4.12.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
